@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.12.3
+
+### Patch Changes
+
+- [#307](https://github.com/dohooo/helmor/pull/307) [`0f9fe7a`](https://github.com/dohooo/helmor/commit/0f9fe7a478aa3994e31707c73007e3665c94d017) Thanks [@baptisteArno](https://github.com/baptisteArno)! - Fix file and image attachments whose absolute paths contain whitespace (a common case for macOS Finder drops like `Application Support/...` or CleanShot screenshots) — they now round-trip end-to-end without being truncated, and steer turns keep their image badges after a reload.
+
+- [#323](https://github.com/dohooo/helmor/pull/323) [`f953cc8`](https://github.com/dohooo/helmor/commit/f953cc895f6b48988b64d8e39b661e2afb6eb3a3) Thanks [@lucasbastianik](https://github.com/lucasbastianik)! - Hide "Open in Finder" on archived workspaces and show the real error message instead of "[object Object]" when opening Finder fails.
+
+- [#306](https://github.com/dohooo/helmor/pull/306) [`c344573`](https://github.com/dohooo/helmor/commit/c344573be7459512e103608c30bb1aeb97c89f8a) Thanks [@baptisteArno](https://github.com/baptisteArno)! - Fix the Edit tool-call diff hover popover overflowing past the viewport when the badge sits near the bottom of the chat — it now flips above the trigger or shrinks to scroll within the available space.
+
+- [#302](https://github.com/dohooo/helmor/pull/302) [`f97034c`](https://github.com/dohooo/helmor/commit/f97034c267a7fb2ff67d5a26aea9d09a1b3ebe9b) Thanks [@aidxun](https://github.com/aidxun)! - Fix Quit Helmor from the macOS app menu during onboarding so the app exits normally before the main workspace shell is loaded.
+
+- [#315](https://github.com/dohooo/helmor/pull/315) [`cdaaefa`](https://github.com/dohooo/helmor/commit/cdaaefa0c456e2ecd16edddb6f3127fa8536b02d) Thanks [@himanshhhhuv](https://github.com/himanshhhhuv)! - Fix terminal panel collapsing during text selection — the expanded terminal now stays open while selecting text, even when the cursor moves outside the container boundary.
+
 ## 0.12.2
 
 ### Patch Changes
